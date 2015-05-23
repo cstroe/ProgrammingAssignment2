@@ -3,6 +3,25 @@
 ##                    inverse
 ## * cacheSolve: solve for the inverse of a matrix and save the solution
 ##               to the cache
+##
+## Example:
+##
+## > real_matrix <- matrix(1:4, nrow = 2, ncol = 2)
+##
+## > cache_matrix <- makeCacheMatrix(real_matrix)
+##
+## > cacheSolve(cache_matrix)
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+##
+## > cacheSolve(cache_matrix)
+## Retrieving cached value for matrix inverse.
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+
+
 
 ## Wrap a matrix with a function that caches its inverse.
 ## Methods: set, get, setinverse, getinverse
